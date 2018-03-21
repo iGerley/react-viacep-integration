@@ -1,0 +1,29 @@
+{
+  "name": "react-viacep-integration",
+  "version": "1.0.0",
+  "description": "Integration beteween the React library and ViaCEP free API - Read more in https://viacep.com.br. If you're looking by an example of API calls made in React or a pinch of Sass preprocessor usage, you are at the right place. Clone this repository and be happy!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iGerley/react-viacep-integration.git"
+  },
+  "keywords": [
+    "react",
+    "viacep",
+    "api",
+    "webpack",
+    "babel",
+    "sass",
+    "component-based",
+    "ecmascript6"
+  ],
+  "author": "Gerley Adriano <gerleyadrianomiranda@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iGerley/react-viacep-integration/issues"
+  },
+  "homepage": "https://github.com/iGerley/react-viacep-integration#readme"
+}
