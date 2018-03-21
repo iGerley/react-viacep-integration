@@ -4,6 +4,8 @@
   "description": "Integration beteween the React library and ViaCEP free API - Read more in https://viacep.com.br. If you're looking by an example of API calls made in React or a pinch of Sass preprocessor usage, you are at the right place. Clone this repository and be happy!",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "dev-server": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
