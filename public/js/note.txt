@@ -1,0 +1,2 @@
+This is the local where will be generated the bundle file (as preadjusted in the webpack.config.js file.).
+Thanks!!!
