@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import Header from './Header';
 
 export default class ViaCEPAPP extends Component {
     render () {
+        const subtitle = 'Something here.'
         return (
             <div>
-                <h1>Comming Soon</h1>
-                <h2>{this.props.reason}</h2>
+                <Header subtitle={subtitle} />
             </div>
         )
-    }
+    }    
 }
