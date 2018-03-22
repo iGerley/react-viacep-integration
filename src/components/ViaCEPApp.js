@@ -6,14 +6,23 @@ import Header from './Header';
 
 export default class ViaCEPAPP extends Component {
     state = {
-        cep: undefined
+        cep: undefined,
+        info: ''
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        fetch(`https://viacep.com.br/ws/${this.state.cep}/json/`)
+        .then(response => response.json())
+        .then(json => {
+            this.setState({ info: json })
+        });
     }
 
     handleAction = (cep) => {
         if (isNaN(cep)) {
-            return 'Only number are accepted.'
+            return 'Only number are accepted.';
         } else if (cep.length < 8) {
-            return 'A CEP code has 8 characters.'
+            return 'A CEP code has 8 characters.';
         }
         this.setState({ cep });
     }
