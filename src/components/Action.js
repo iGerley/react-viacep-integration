@@ -13,9 +13,9 @@ export default class Action extends Component {
         this.setState(() => ({ error }));
 
         if (!error) {
+            console.log(this.props.handleCEPData(cep));
             event.target.elements.cep.value = '';
         }
-
     }
 
     render() {
