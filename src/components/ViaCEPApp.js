@@ -36,7 +36,7 @@ export default class ViaCEPAPP extends Component {
                 <Header subtitle={subtitle} />
                 <div>
                     <Action handleAction={this.handleAction} />
-                    <Info data={this.data} />
+                    <Info data={this.state.data} />
                 </div>
             </div>
         )
