@@ -5,16 +5,17 @@ import Info from './Info';
 import Header from './Header';
 
 export default class ViaCEPAPP extends Component {
+
     state = {
-        cep: undefined,
-        info: ''
-    }
+        cep: '',
+        data: undefined
+    };
 
     componentDidUpdate(prevProps, prevState) {
         fetch(`https://viacep.com.br/ws/${this.state.cep}/json/`)
         .then(response => response.json())
         .then(json => {
-            this.setState({ info: json })
+            this.setState({ data: json })
         });
     }
 
@@ -35,6 +36,7 @@ export default class ViaCEPAPP extends Component {
                 <Header subtitle={subtitle} />
                 <div>
                     <Action handleAction={this.handleAction} />
+                    <Info data={this.data} />
                 </div>
             </div>
         )
