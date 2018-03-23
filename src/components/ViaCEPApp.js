@@ -8,7 +8,7 @@ export default class ViaCEPAPP extends Component {
 
     state = {
         cep: '',
-        data: undefined
+        data: {}
     };
 
     componentDidUpdate(prevProps, prevState) {
