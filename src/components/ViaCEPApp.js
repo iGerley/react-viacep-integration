@@ -12,7 +12,6 @@ export default class ViaCEPAPP extends Component {
     };
 
     handleCEPData = (cep) => {
-        console.log(cep);
         fetch(`https://viacep.com.br/ws/${cep}/json/`)
             .then(response => response.json())
             .then(json => {
