@@ -11,12 +11,13 @@ export default class ViaCEPAPP extends Component {
         data: {}
     };
 
-    componentDidUpdate(prevProps, prevState) {
-        fetch(`https://viacep.com.br/ws/${this.state.cep}/json/`)
-        .then(response => response.json())
-        .then(json => {
-            this.setState({ data: json })
-        });
+    handleCEPData = (cep) => {
+        console.log(cep);
+        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+            .then(response => response.json())
+            .then(json => {
+                this.setState({ data: json })
+            });
     }
 
     handleAction = (cep) => {
@@ -35,7 +36,7 @@ export default class ViaCEPAPP extends Component {
             <div>
                 <Header subtitle={subtitle} />
                 <div>
-                    <Action handleAction={this.handleAction} />
+                    <Action handleAction={this.handleAction} handleCEPData={this.handleCEPData} />
                     <Info data={this.state.data} />
                 </div>
             </div>
