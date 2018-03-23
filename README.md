@@ -10,12 +10,27 @@ Install with yarn:
 ```console
 yarn install
 ```
-
 ### Build
 ```console
 yarn run build
 ```
-#### Running on the Development Server
+### Running on the Development Server
 ```console
 yarn run dev
 ```
+
+### Example of API expected result
+```json
+{
+  "cep": "74633-020",
+  "logradouro": "Praça da Bíblia",
+  "complemento": "",
+  "bairro": "Setor Leste Universitário",
+  "localidade": "Goiânia",
+  "uf": "GO",
+  "unidade": "",
+  "ibge": "5208707",
+  "gia": ""
+}
+```
+More informations about ViaCEP API in  https://viacep.com.br.
