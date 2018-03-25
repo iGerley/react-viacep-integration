@@ -29,11 +29,9 @@ export default class ViaCEPAPP extends Component {
     }
 
     render() {
-        const subtitle = 'Something here.';
-        const placeholder = 'Type the CEP number here...';
         return (
             <div>
-                <Header subtitle={subtitle} />
+                <Header />
                 <div>
                     <Action handleAction={this.handleAction} handleCEPData={this.handleCEPData} />
                     <Info data={this.state.data} />
