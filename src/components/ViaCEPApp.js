@@ -32,7 +32,7 @@ export default class ViaCEPAPP extends Component {
         return (
             <div>
                 <Header />
-                <div>
+                <div className="container">
                     <Action handleAction={this.handleAction} handleCEPData={this.handleCEPData} />
                     <Info data={this.state.data} />
                 </div>
