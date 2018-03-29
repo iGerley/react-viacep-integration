@@ -3,7 +3,7 @@ import React from 'react';
 const Info = (props) => (
     <div className="widget">
         {Object.keys(props.data).length > 1 && (
-            <div>
+            <div className="widget__text">
                 <p>CEP: {props.data.cep}</p>
                 <p>Logradouro: {props.data.logradouro}</p>
                 <p>Complemento: {props.data.complemento}</p>
