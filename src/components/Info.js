@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Info = (props) => (
-    <div>
+    <div className="widget">
         {Object.keys(props.data).length > 1 && (
             <div>
                 <p>CEP: {props.data.cep}</p>
