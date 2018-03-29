@@ -2,3 +2,18 @@
     background: $light-blue;
     margin-bottom: $xl-size;
 }
+
+.widget__text {
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    word-break: break-all;
+}
+
+.widget__text > p {
+    border-bottom: 1px solid lighten($light-blue, 10%);
+    display: flex;
+    justify-content: space-between;
+    padding: $l-size $m-size;
+}
