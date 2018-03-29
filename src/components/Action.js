@@ -24,7 +24,7 @@ export default class Action extends Component {
             <div>
                 <form className="add-option" onSubmit={this.handleAction}>
                     <input className="add-option__input" type="text" name="cep" maxLength="8" />
-                    <button className="button">Add CEP</button>
+                    <button className="button">Let's Go</button>
                 </form>
             </div>
         );
