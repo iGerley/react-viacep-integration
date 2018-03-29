@@ -22,8 +22,8 @@ export default class Action extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleAction}>
-                    <input type="text" name="cep" maxLength="8" />
+                <form className="add-option" onSubmit={this.handleAction}>
+                    <input className="add-option__input" type="text" name="cep" maxLength="8" />
                     <button className="button">Add CEP</button>
                 </form>
             </div>
